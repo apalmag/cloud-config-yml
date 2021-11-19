@@ -1,4 +1,4 @@
-sample.property: DEFAULT
+sample.property: MAIN
 
 database.host: sql5.freesqldatabase.com
 database.name: sql5452129
