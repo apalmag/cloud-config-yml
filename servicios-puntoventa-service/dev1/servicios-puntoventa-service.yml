@@ -1,0 +1,24 @@
+spring:
+# Conexion a BDA
+  datasource:
+    url: jdbc:mysql://db4free.net:3306/punto_venta_dba
+    username: admin_dba_2
+    password: Pa$$w0rd
+# Configuraciones de JPA
+  jpa: 
+    hibernate.ddl-auto: none
+    database-platform: org.hibernate.dialect.MySQLDialect 
+    show-sql: true
+    open-in-view: false
+
+# Logger configuracion
+logging:
+  file: application-debug.log
+  pattern:
+    console: "%d %-5level %logger : %msg%n"
+    file: "%d %-5level [%thread] %logger : %msg%n"
+  level:
+    com.mx.pv: INFO
+    org.springframework.web: ERROR
+    com.howtodoinjava: DEBUG
+    org.hibernate: ERROR
